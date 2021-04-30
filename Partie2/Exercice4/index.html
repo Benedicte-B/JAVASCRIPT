@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d38cea82af.js" crossorigin="anonymous"></script>
+    <title>JAVASCRIPT Partie 2 Exercice 4 : Voyage & Co</title>
+</head>
+<!-- Section : NAVIGATION -->
+<nav>
+    <div class="container">
+        <div class="navigation">
+            <ul class="navbar">
+                <li class="active"><a href="#accueil">ACCUEIL</a></li>
+                <li><a href="#destinations">DESTINATIONS</a></li>
+                <li><a href="#reservations">RESERVATIONS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li>
+                    <form action="" method="">
+                        <input type="text" name="search" placeholder="Rechercher">
+                        <input type="submit" name="buttonSearch" value="Rechercher">
+                    </form>
+                </li>
+                <li><i class="fas fa-bars" id="iconBurger"></i></li>
+            </ul> 
+        </div>
+    </div>
+</nav>
+<!-- Section : HEADER -->
+<header id="header">
+    <h1>Voyage & Co</h1>
+</header>
+
+<!--Section : A PROPOS
+<section id="accueil">
+        <div class="apropos">
+            <h2>A PROPOS DE VOYAGE & Co</h2>
+            <p>Ceci est un texte de présentation, on s'en moque du contenu. Le plus important est qu'il y ait du texte. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis voluptatum et nobis nam excepturi, repellat vitae eaque sint aspernatur doloribus rerum, saepe alias architecto delectus voluptates, dolor expedita nesciunt. </p>
+        </div>
+</section>
+<!--Section : DESTINATIONS (flex version)-->
+<!--
+<section id="destinations">
+    <div class="container">
+            <div class="ligne">
+                <!--Premier bloc
+                <div class="bloc1">
+                    <img src="img/qualite.png" alt="qualite">
+                    <h3>Titre de présentation</h3>
+                    <p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, labore cupiditate iste doloribus eligendi nostrum optio saepe deleniti nesciunt fuga debitis consequatur nam voluptas? Doloremque perspiciatis optio accusantium maxime sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat numquam, id fugit eos possimus illo rem expedita ipsa! Facilis consectetur numquam perspiciatis incidunt quam consequuntur omnis aperiam dolor dolorum!</p>
+                </div>
+                <!--Deuxième bloc
+                <div class="bloc1">
+                    <img src="img/qualite.png" alt="qualite">
+                    <h3>Titre de présentation</h3>
+                    <p>Description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo minus maxime nostrum sed porro rerum, ea vel provident beatae obcaecati? Porro incidunt quod, facere ex earum voluptatem sapiente sunt voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rem placeat est sint totam necessitatibus id libero, aspernatur vero, dolores laboriosam tenetur nihil earum ipsa et adipisci, excepturi accusamus ducimus?
+                    </p>
+                </div>
+                <!--Troisième bloc
+                <div class="bloc1">
+                    <img src="img/qualite.png" alt="qualite">
+                    <h3>Titre de présentation</h3>
+                    <p>Description. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis id vero, distinctio laboriosam rem odit odio nihil excepturi eius quos fugiat delectus ratione quibusdam suscipit voluptas soluta saepe? Aperiam, consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, non! Commodi cumque dignissimos soluta quas, sunt vitae tempore, aliquam dolor, a alias et fugit placeat qui aperiam totam vel ut?</p>
+                </div>
+            </div>
+    </div>
+</section>-->
+
+
+<!--Section : A PROPOS (grid version)-->
+<section id="accueil">
+    <div class="apropos">
+        <div class="aproposContent">
+        <h2>A PROPOS DE VOYAGE & Co</h2>
+        <p>Ceci est un texte de présentation, on s'en moque du contenu. Le plus important est qu'il y ait du texte. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facilis voluptatum et nobis nam excepturi, repellat vitae eaque sint aspernatur doloribus rerum, saepe alias architecto delectus voluptates, dolor expedita nesciunt. </p>
+        </div>
+    </div>
+</section>
+<!--Section : DESTINATIONS (grid version)--> 
+<section id="destination">
+        <div class="nosdestinations">
+            <h2>NOS DESTINATIONS</h2>
+        </div>
+    <div class="destination" id="paragraph">
+        <!-- Bloc 1-->
+        <div class="image1"><img src="assets/img/qualite.png" alt="qualite"></div>
+        <div class="titre1"><h3>Titre de présentation</h3></div>
+        <div class="paragraphe1"><p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, labore cupiditate iste doloribus eligendi nostrum optio saepe deleniti nesciunt fuga debitis consequatur nam voluptas? Doloremque perspiciatis optio accusantium maxime sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat numquam, id fugit eos possimus illo rem expedita ipsa! Facilis consectetur numquam perspiciatis incidunt quam consequuntur omnis aperiam dolor dolorum!</p></div>
+        <!-- Bloc 1-->
+        <div class="image2"><img src="assets/img/qualite.png" alt="qualite"></div>
+        <div class="titre2"><h3>Titre de présentation</h3></div>
+        <div class="paragraphe2"><p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, labore cupiditate iste doloribus eligendi nostrum optio saepe deleniti nesciunt fuga debitis consequatur nam voluptas? Doloremque perspiciatis optio accusantium maxime sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat numquam, id fugit eos possimus illo rem expedita ipsa! Facilis consectetur numquam perspiciatis incidunt quam consequuntur omnis aperiam dolor dolorum!</p></div>
+        <!-- Bloc 3-->
+        <div class="image3"><img src="assets/img/qualite.png" alt="qualite"></div>
+        <div class="titre3"><h3>Titre de présentation</h3></div>
+        <div class="paragraphe3"><p>Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, labore cupiditate iste doloribus eligendi nostrum optio saepe deleniti nesciunt fuga debitis consequatur nam voluptas? Doloremque perspiciatis optio accusantium maxime sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat numquam, id fugit eos possimus illo rem expedita ipsa! Facilis consectetur numquam perspiciatis incidunt quam consequuntur omnis aperiam dolor dolorum!</p></div>
+    </div>
+</section>
+
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* exemple incorporation police manuelle 
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(assets/font/Roboto-Black.ttf);
+    font-family: 'Roboto-Light';
+    src: url(assets/font/Roboto-Light.ttf);
+}*/
+
+
+#header{
+    display: flex;
+    height: 600px;
+    background-image: url('../img/header2.jpg');
+    background-size: cover;
+    background-position: 24% 40%;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(123, 181, 221);
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+li > a{
+    display: flex;
+    font-size: 12px;
+    font-family: Roboto;
+	letter-spacing: 1px;
+    color: #444;
+	text-transform: uppercase;
+	font-weight: 400;
+    margin: 30px;
+    text-decoration: none;
+}
+.active a{
+    font-weight: 900;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #444;
+    font-weight: 900;
+}
+#iconBurger{
+    color: red;
+    font-size: 40px;
+    display: none;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(157, 217, 246);
+    height: 200px;
+}
+
+.apropos{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.apropos, h2 {
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.apropos, p {
+    margin: auto;
+    width: auto;
+    font-size: 16px;
+    text-transform: none;
+    font-family: 'Roboto';
+    font-weight: 200;
+    text-align: center;
+}
+.nosdestinations{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.nosdestinations, h2 {
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/*.container{
+    display : flex; 
+    flex-direction: column; /* Pour que nos lignes soient placées en colonnes*/
+}
+.ligne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Pour que nos lignes placées en lignes*/
+}
+#destinations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color : white;
+    height: 400px;
+}
+
+.apropos{
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: auto;
+    text-align: center;
+    align-items: center;
+}
+.aproposContent{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.destination {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    grid-template-rows: auto;
+    text-align: center;
+    align-items: center;
+}
+.image1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .image2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .image3 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .titre1{
+      grid-column: 2;
+      grid-row: 2;
+  }
+  .titre2{
+    grid-column: 3;
+    grid-row: 2;
+}
+.titre3{
+    grid-column: 4;
+    grid-row: 2;
+}
+.paragraphe1{
+    grid-column: 2;
+    grid-row: 3;
+}
+.paragraphe2{
+    grid-column: 3;
+    grid-row: 3;
+}
+.paragraphe3{
+    grid-column: 4;
+    grid-row: 3;
+}
+@media screen and (max-width:480px){
+
+#iconBurger{
+    display: block;
+}
+.navbar {
+    display:none;
+}
+}
