@@ -1,0 +1,11 @@
+input .is-valid{
+    outline : solid green;
+    color : green; 
+}
+input .is-invalid{
+    outline : solid red; 
+    color : red; 
+}
+input:focus{
+    outline : 0;
+}

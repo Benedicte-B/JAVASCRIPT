@@ -18,7 +18,26 @@
 <body>
     <!--Formulaire Bootstrap-->
     <form>
-        <input type="text" class="form-control is-valid is-invalid" id="userName" name="userName" placeholder="Nom d'utilisateur" required>
+    <!-- Première étape avec button au clic alerte OK Pas OK-->
+        <input type="text" id="userName" name="userName" placeholder="Nom d'utilisateur" required>
+        <input type="button" name="button" value="OK" id="button"/>
+        <br><br>
+    <!-- Deuxième étape à la composition alerte OK pas OK-->
+        <input type="text"  id="userForm" name="userForm" placeholder="Nom d'utilisateur" required>
+        <br><br>
+    <!-- Troisième étape : la totale -->
+        <input type="text" name="userChamp" id="userChamp" placeholder="Nom d'utilisateur" required>
+        <div id="message"></div>
+
+
+        <!--class="form-control is-valid is-invalid"
+
+        <div class="alert alert-success" role="alert">
+            This is a success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            This is a danger alert—check it out!
+        </div>-->
     </form>
 
 

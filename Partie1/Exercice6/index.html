@@ -10,8 +10,6 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!--Link CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--Script JS-->
-    <script src="assets/js/script.js"></script>
     <!--Script Boostrap JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -27,11 +25,15 @@
 <body>
     <form action="">
         <!--Saisie Pointure-->
-        <input type="number" id="pointure" placeholder="Pointure" name="input"/>
+        <input type="number" id="pointure" placeholder="Pointure" name="pointure"/>
         <!--Saisie Date de naissance-->
-        <input type="number" id="naissance" placeholder="Date de naissance" name="input"/>
+        <input type="number" id="naissance" placeholder="Date de naissance" name="naissance"/>
         <!--Button-->
-        <input type="button" name="button" value="Calcul trop fun" onclick="controle()"/>
+        <input type="button" name="button" value="Calcul trop fun" id="button"/>
+        <!--onclick="calcul()"/>-->
     </form>
+        <!--Script JS-->
+        <script src="assets/js/script.js"></script>
+
 </body>
 </html>

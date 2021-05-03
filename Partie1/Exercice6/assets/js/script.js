@@ -1,8 +1,10 @@
 //JAVASCRIPT Partie 1 - Exercice 5
-function controle(){
+let button = document.getElementById('button');
+
+button.addEventListener('click', function calcul(){
     let pointure = document.getElementById('pointure').value;
     let naissance = document.getElementById('naissance').value;
-    let calcul = ((((pointure*2)+5)*50)-naissance)+1769;
-    
-    alert(calcul);
-}
+    let resultat = ((((pointure*2)+5)*50)-naissance)+1771;
+
+alert(resultat);
+});
