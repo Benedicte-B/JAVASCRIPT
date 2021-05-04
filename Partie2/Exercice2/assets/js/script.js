@@ -10,14 +10,17 @@ function agrandir() {
 }*/
 
 // Deuxième option
-let agrandir = document.getElementById('myImg');
+let myImg = document.getElementById('myImg');
 
-agrandir.addEventListener ('click', function zoom (){
-    let myImg = document.getElementById("myImg");
+myImg.addEventListener ('click', function zoom (){
+    // clientWidth doit être à l'intérieur de la fonction pour la récupérer à chaque fois
     let width = myImg.clientWidth;
-    let height = myImg.clientHeight;
-        myImg.style.width = (width + 20) + "px";
-        myImg.style.height = (height + 20) + "px";
+    if (width >= 500){
+        myImg.style.width = 150 + 'px';
+    } else {
+        myImg.style.width = (width + 20) + 'px';
+    }
+    console.log(width);
 });
 
 

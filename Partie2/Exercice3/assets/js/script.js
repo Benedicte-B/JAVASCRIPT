@@ -50,22 +50,20 @@ userForm.addEventListener('keydown', function tape(){
 
 //Troisième étape : la totale
 let user = 'benedicte';
-let userChamp = document.getElementById('userChamp');
+let userName = document.getElementById('userChamp');
 
 userChamp.addEventListener('keyup', function compose (){
         let user = 'benedicte'
         let userChamp = document.getElementById('userChamp').value;
-        let classForm = document.getElementsByClassName('form-control');
         let message = document.getElementById('message');
         
         if(user == userChamp){
-                message.innerHTML = "<div class=\"alert alert-success\" role=\"alert\"> Ok ! </div>";
-                userChamp.classList.add("is-valid");
-                
+                message.innerHTML = `<div class="alert alert-success" role="alert"> Ok ! </div>`;
+                userName.style.borderColor = 'green';
+// Pas de saut à la ligne dans une innerHTML  donc utilisation des magic quotes `
         } else {
-                userChamp.className = "form-control is-valid";
-                message.innerHTML = "<div class=\"alert alert-danger\" role=\"alert\"> Faux !</div>";
-                userChamp.classList.add("is-invalid"); 
+                message.innerHTML = `<div class="alert alert-danger" role="alert"> Faux !</div>`;
+                userName.style.borderColor = 'red';
         }
 
 });

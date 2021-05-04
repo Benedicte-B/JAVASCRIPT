@@ -198,6 +198,15 @@ a:focus {
     grid-column: 4;
     grid-row: 3;
 }
+
+
+.reveal{
+    visibility: hidden;
+}
+.reveal-visible{
+    visibility: visible;
+    transition : all 0.25s ease-in-out;
+}
 @media screen and (max-width:480px){
 
 #iconBurger{
