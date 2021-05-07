@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
 
 
 
-// Première méthode
+/*// Première méthode
 let paragraph = document.getElementById('paragraph');
 window.addEventListener('scroll', function show(){
         if(window.scrollY > 400){
@@ -15,9 +15,9 @@ window.addEventListener('scroll', function show(){
         } else {
                 paragraph.style.visibility = 'hidden';
         }
-});
+});*/
 
-// Deuxième méthode 
+/*// Deuxième méthode 
 // Attention à l'ordre des classes dans le CSS
 // POssibilité d'intégrer du Bootstrap
 let paragraph = document.getElementById('paragraph');
@@ -27,5 +27,28 @@ window.addEventListener('scroll', function reveal(){
         } else {
                 paragraph.classList.remove('reveal-visible');
         }
-});
+});*/
 
+
+// Troisi§me méthode : Cindy
+// % au scroll
+const paragraph = document.getElementById('paragraph');
+
+window.addEventListener('scroll', function(){
+
+/*console.log(window.innerHeight);
+console.log(window.scrollY);
+console.log(document.body.offsetHeight);*/
+
+//calculer la valeur du sroll en %
+scrollValue = (window.innerHeight + window.scrollY) / (document.body.offsetHeight);
+//vérifier la valeur % du scroll
+console.log(scrollValue)
+
+if (scrollValue > 0.8){
+paragraph.style.visibility = 'visible';
+paragraph.style.transform = 'none';
+} else{
+paragraph.style.visibility = 'hidden';
+}
+});

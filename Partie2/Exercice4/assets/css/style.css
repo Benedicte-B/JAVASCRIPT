@@ -198,7 +198,12 @@ a:focus {
     grid-column: 4;
     grid-row: 3;
 }
-
+#paragraph{
+    visibility: hidden;
+    transform: translateX(-500px);
+    transition: 1s ease-in;
+    }
+}
 
 .reveal{
     visibility: hidden;

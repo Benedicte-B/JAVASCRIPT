@@ -22,7 +22,7 @@ inputElement.addEventListener('compositionstart', function verification(){
 
 // Première étape avec button au clic alerte OK Pas OK 
 
-let button = document.getElementById('button');
+/*let button = document.getElementById('button');
 
 button.addEventListener('click', function verif (){
         let user = 'benedicte'
@@ -66,11 +66,26 @@ userChamp.addEventListener('keyup', function compose (){
                 userName.style.borderColor = 'red';
         }
 
-});
+});*/
 
-//créer la variable pour vérifier
-// Addeventlistener sur l'input formulaire
-// Evenement : keyup
-// créer une variable et créer la valeur du champ
-// Ajout de class
-// Ajout inner HTML div message 
+//Quatrième étape : test ajout de classe
+let user = 'benedicte';
+let userChamp = document.getElementById('userChamp');
+
+userChamp.addEventListener('keyup', function compose (){
+        let userChampValue = userChamp.value;
+        let message = document.getElementById('message');
+        
+        if(user == userChampValue){
+                message.innerHTML = `<div class="alert alert-success" role="alert"> Ok ! </div>`;
+                userChamp.classList.add ('is-valid', 'text-success');
+                userChamp.classList.remove ('is-invalid', 'text-danger'); 
+        
+// Pas de saut à la ligne dans une innerHTML  donc utilisation des magic quotes `
+        } else {
+                message.innerHTML = `<div class="alert alert-danger" role="alert"> Faux !</div>`;
+                userChamp.classList.add ('is-invalid', 'text-danger');
+                userChamp.classList.remove ('is-valid', 'text-success');     
+        }
+console.log(userChampValue);
+});
